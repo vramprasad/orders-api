@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "3f3ff1d4-6add-4543-9efc-db1c9d47ce77",
+		"name": "Orders API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1288303"
+	},
+	"item": [
+		{
+			"name": "placeOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\": 1533,\r\n    \"cartItems\": [\r\n        {\r\n            \"productId\" : 4701,\r\n            \"quantity\": 5\r\n        },\r\n        {\r\n            \"productId\" : 4702,\r\n            \"quantity\": 3\r\n        }\r\n    ]\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9904/orders-api/placeOrder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9904",
+					"path": [
+						"orders-api",
+						"placeOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Healthcheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9904/orders-api/healthcheck",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9904",
+					"path": [
+						"orders-api",
+						"healthcheck"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9904/orders-api/listAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9904",
+					"path": [
+						"orders-api",
+						"listAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
